@@ -1,0 +1,39 @@
+// @import "quasar/src/css/index.sass";
+// @use "quasar/src/css/variables.sass" as q;
+
+// src/css/quasar.variables.scss
+
+.q-message-text {
+  border-radius: 8px;
+  &:last-child:before {
+    border: none;
+  }
+}
+
+.q-message-text--sent {
+  background-color: var(--q-chat-message-sent-bg);
+}
+
+.q-message-text--received {
+  background-color: var(--q-chat-message-received-bg);
+}
+
+.bg-primary-4 {
+  background-color: var(--q-primary-4);
+}
+
+.q-page-container {
+  padding-right: 10px;
+}
+
+@for $var from 1 through 10 {
+  .primary-#{$var} {
+    color: var(--q-primary-#{$var});
+  }
+}
+
+@for $var from 1 through 10 {
+  .bg-primary-#{$var} {
+    background-color: var(--q-primary-#{$var});
+  }
+}

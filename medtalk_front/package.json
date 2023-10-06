@@ -1,0 +1,45 @@
+{
+  "name": "medchat",
+  "description": "",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vue-tsc --noEmit && vite build",
+    "build2": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.16.6",
+    "axios": "^1.5.0",
+    "echarts": "^5.4.3",
+    "echarts-wordcloud": "^2.1.0",
+    "lodash-es": "^4.17.21",
+    "mitt": "^3.0.1",
+    "neo4j-driver": "^4.4.11",
+    "pinia": "^2.1.6",
+    "popoto": "^4.0.3",
+    "quasar": "^2.12.6",
+    "vue": "^3.3.4",
+    "vue-clipboard3": "^2.0.0",
+    "vue-cookies": "^1.8.3",
+    "vue-echarts": "^6.6.1",
+    "vue-router": "^4.2.4"
+  },
+  "devDependencies": {
+    "@quasar/vite-plugin": "^1.5.0",
+    "@types/lodash-es": "^4.17.9",
+    "@types/node": "^20.6.0",
+    "@types/popoto": "^3.0.0",
+    "@vitejs/plugin-vue": "^4.3.4",
+    "autoprefixer": "^10.4.15",
+    "postcss": "^8.4.29",
+    "sass": "1.32.13",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.2.2",
+    "unplugin-auto-import": "^0.16.6",
+    "unplugin-vue-components": "^0.25.2",
+    "vite": "^4.4.9",
+    "vite-plugin-compression": "^0.5.1",
+    "vue-tsc": "^1.8.10"
+  }
+}
