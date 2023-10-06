@@ -1,0 +1,1 @@
+cd src && python -m app.init_data

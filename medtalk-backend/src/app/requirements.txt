@@ -1,0 +1,12 @@
+aiohttp
+asyncpg
+bcrypt
+Faker
+fastapi
+fastapi_pagination
+passlib
+psycopg2
+pydantic
+python_jose
+sqlmodel
+uvicorn

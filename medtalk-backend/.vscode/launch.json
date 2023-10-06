@@ -1,0 +1,71 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Init data",
+      "type": "python",
+      "request": "launch",
+      "module": "app.init_data",
+      "justMyCode": true,
+      "cwd": "${workspaceFolder}/src"
+    },
+    {
+      "name": "Python: FastAPI",
+      "type": "python",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": ["app.main:app", "--host", "0.0.0.0", "--reload"],
+      "jinja": true,
+      "justMyCode": true,
+      "cwd": "${workspaceFolder}/src"
+    },
+    {
+      "name": "Python: Test search",
+      "type": "python",
+      "request": "launch",
+      "module": "ai.kgqa.search",
+      "justMyCode": true,
+      "cwd": "${workspaceFolder}/src",
+      "env": {
+        "NEO_PROFILE": "http://10.203.248.130:7474/",
+        "NEO_PASSWORD": "Citrus130649"
+      }
+    },
+    {
+      "name": "Python: Test answer",
+      "type": "python",
+      "request": "launch",
+      "module": "ai.kgqa.answer",
+      "justMyCode": true,
+      "cwd": "${workspaceFolder}/src",
+      "env": {
+        "NEO_PROFILE": "http://10.208.87.48:7474/",
+        "NEO_PASSWORD": "Citrus130649"
+      }
+    },
+    {
+      "name": "Python: Test detect",
+      "type": "python",
+      "request": "launch",
+      "module": "ai.kgqa.test",
+      "justMyCode": true,
+      "cwd": "${workspaceFolder}/src",
+      "env": { "NEO_PROFILE": "http://10.208.87.48:7474/" }
+    },
+    {
+      "name": "Python: Test pipeline",
+      "type": "python",
+      "request": "launch",
+      "module": "ai.pipeline",
+      "justMyCode": true,
+      "cwd": "${workspaceFolder}/src",
+      "env": {
+        "NEO_PROFILE": "http://10.208.87.48:7474/",
+        "NEO_PASSWORD": "Citrus130649"
+      }
+    }
+  ]
+}
